@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\ViewComponents\**" />
+    <Content Remove="Models\ViewComponents\**" />
+    <EmbeddedResource Remove="Models\ViewComponents\**" />
+    <None Remove="Models\ViewComponents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.22">
       <PrivateAssets>all</PrivateAssets>
