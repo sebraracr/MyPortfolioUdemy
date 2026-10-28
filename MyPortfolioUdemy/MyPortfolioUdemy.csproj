@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
+   <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
@@ -11,6 +11,10 @@
     <Content Remove="Models\ViewComponents\**" />
     <EmbeddedResource Remove="Models\ViewComponents\**" />
     <None Remove="Models\ViewComponents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
   </ItemGroup>
 
   <ItemGroup>
