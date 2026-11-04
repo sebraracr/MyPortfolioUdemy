@@ -1,20 +1,20 @@
 ﻿@model List<MyPortfolioUdemy.DAL.Entities.Skill>
+
 @{
-    int x= 0;
+    int x = 0;
+    string bar = "progress percent";
 }
 <div class="col-six tab-full right">
-    <h3>Programlama Dilleri & Teknolojileri</h3>
-
-    
+    <h3>Yeteneklerim</h3>
     <ul class="skill-bars">
-        @foreach(var item in Model)
-    {
-            x = item.Value;
-        <li>
-            <div class="progress percent @x"><span>@item.Value</span></div>
-            <strong>@item.Title</strong>
-        </li>
-    }
-      
+        @foreach (var item in Model)
+        {
+            x= item.Value - item.Value % 5;
+            bar = "progress percent" +x;
+            <li>
+                <div class="@bar"><span>@item.Value %</span></div>
+                <strong>@item.Title</strong>
+            </li>
+        }
     </ul>
 </div>

@@ -1750,7 +1750,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: .1;
     background-color: #111111;
 }
 
@@ -4136,4 +4136,49 @@ article.blog-single .blog-content {
     .commentlist .comment__avatar {
         display: none;
     }
+}
+.s-home .home-content__main h3 {
+    color: #00D9FF;
+}
+.s-home .home-content__buttons .btn {
+    border: 2px solid #00D9FF;
+    color: #00D9FF;
+    background-color: transparent;
+}
+
+    .s-home .home-content__buttons .btn:hover {
+        background-color: #00D9FF;
+        color: #001B2E;
+    }
+/* Üst menüde aktif sayfanın rengi */
+.header-nav a:hover,
+.header-nav .current a {
+    color: #00D9FF;
+}
+
+/* Üstteki kırmızı çizgi */
+
+.s-header {
+    border-top: 3px solid #00D9FF !important;
+}
+/* Aktif menü rengini mavi yap */
+.header-nav li.current a {
+    color: #2196F3 !important;
+}
+/* Bölüm başlıklarını mavi yap */
+.section-intro h3 {
+    color: #2196F3 !important;
+}
+
+/* Aktif menü rengini mavi yap */
+.header-nav li.current a {
+    color: #2196F3 !important;
+}
+/* Sadece Deneyimlerim başlığı mavi */
+.experience-title {
+    color: #2196F3 !important;
+}
+/* Referanslarım başlığını mavi yap */
+.testimonials-header h1 {
+    color: #2196F3 !important;
 }
