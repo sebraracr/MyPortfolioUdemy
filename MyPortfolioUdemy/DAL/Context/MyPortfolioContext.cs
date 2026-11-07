@@ -16,6 +16,7 @@ namespace MyPortfolioUdemy.DAL.Context
         public DbSet<Feature> Features { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<ToDoList> ToDoLists { get; set; }

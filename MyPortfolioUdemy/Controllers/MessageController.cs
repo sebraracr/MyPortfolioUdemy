@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyPortfolioUdemy.DAL.Context;
+using MyPortfolioUdemy.DAL.Entities;
 
 namespace MyPortfolioUdemy.Controllers
 {
@@ -8,7 +9,7 @@ namespace MyPortfolioUdemy.Controllers
         MyPortfolioContext context=new MyPortfolioContext();
         public IActionResult Inbox()
         {
-            var values = context.Messages.ToList();
+            var values = context.Messages.OrderByDescending(x => x.SendDate).ToList();
             return View(values);
         }
         public IActionResult ChangeIsReadToTrue(int id)
@@ -36,6 +37,8 @@ namespace MyPortfolioUdemy.Controllers
         {
             var value=context.Messages.Find(id);
             return View(value);
+        
+        
         }
     }
 }

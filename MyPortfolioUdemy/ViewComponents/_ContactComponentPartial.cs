@@ -5,11 +5,12 @@ namespace MyPortfolioUdemy.ViewComponents
 {
     public class _ContactComponentPartial:ViewComponent
     {
-        
+        MyPortfolioContext _context = new MyPortfolioContext();
+
         public IViewComponentResult Invoke()
         {  
-           
-            return View(); 
+           var values = _context.Contacts.ToList();
+            return View(values); 
         }
     }
 }
